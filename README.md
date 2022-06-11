@@ -36,9 +36,9 @@ SiamRPN은 OTB pretrained model을 사용했다.
 때, 즉 기존의 SiamRPN의 tracking에 대한 결과도 같이 사용하여 과정1에 비해 더 좋은 성능을 얻기 위한 실험이다.
 
 **Evaluation Methods**
-원래 방식(Ground-Truth 사용)
+*원래 방식(Ground-Truth 사용)
 ![image](https://user-images.githubusercontent.com/87515234/173172725-5db8015c-d343-479b-8177-4d0d8c4fbd35.png)
-수정 방식(Ground-Truth 미사용)
+*수정 방식(Ground-Truth 미사용)
 ![image](https://user-images.githubusercontent.com/87515234/173172728-ec6f5b05-9546-4fe9-947f-e22a41e7a49a.png)
 
 Evaluation Methods로는 VOT Challenge의 vot evaluation toolkit이 존재한다. 이 toolkit의 주요 지표로는 accuracy(average overlap),
@@ -51,7 +51,7 @@ Tracking을 하여 evaluation 하는 구조이다. 하지만 실제 세계에서
 반영되지 않음)하고 Tracking을 실패하더라도 모든 Frame에 대해 오직 SiamRPN이 에측한 box에 대해서만 evaluation을 진행했다.
 
 **Dataset**
-VOT 2016
+*VOT 2016
 ![image](https://user-images.githubusercontent.com/87515234/173172798-5d63a5d6-ef8d-4980-b723-ef6a2ee92da6.png)
 VOT Challenge의 dataset으로 연도별로 sequence가 다르며, occlusion, illumination change, object motion, object size change,
 camera motion, unassigned 등 6가지 attributes를 가지고 있다.
@@ -60,33 +60,33 @@ camera motion, unassigned 등 6가지 attributes를 가지고 있다.
 
 ## Results
 
-Process 1 결과(table)
+*Process 1 결과(table)
 ![image](https://user-images.githubusercontent.com/87515234/173172840-be0d2b9a-23a3-4ffe-ba72-42d5e44de70f.png)
 
-Process 1 결과(plot)
+*Process 1 결과(plot)
 ![image](https://user-images.githubusercontent.com/87515234/173172841-3f8d3e47-d01b-4a96-be83-e777b416b06a.png)
 
-Tracking 놓친 순간(Template Frame 고정)
+*Tracking 놓친 순간(Template Frame 고정)
 ![image](https://user-images.githubusercontent.com/87515234/173173010-5d0e92f7-dffa-495c-8e65-393e194ae7e7.png)
 
-Tracking 놓친 후(Template Frame 고정)
+*Tracking 놓친 후(Template Frame 고정)
 ![image](https://user-images.githubusercontent.com/87515234/173173013-b94ad56d-5144-4f5d-9c14-b7c5c6c7be06.png)
 
-Tracking 놓친 순간(Template Frame 선택적)
+*Tracking 놓친 순간(Template Frame 선택적)
 ![image](https://user-images.githubusercontent.com/87515234/173173034-bb10c80b-8861-4f67-a957-1ad0e0953f3a.png)
 
-Tracking 놓친 후(Template Frame 선택적)
+*Tracking 놓친 후(Template Frame 선택적)
 ![image](https://user-images.githubusercontent.com/87515234/173173038-e8c857dc-04f4-4f48-b3d1-d1c074c08543.png)
 
-Process 2 결과(table)
+*Process 2 결과(table)
 ![image](https://user-images.githubusercontent.com/87515234/173172854-542efbe0-f9cd-4157-b78b-903486133c80.png)
-Process 2 결과(plot)
+*Process 2 결과(plot)
 ![image](https://user-images.githubusercontent.com/87515234/173172856-42923273-83be-4c3a-b559-d47a64205f06.png)
 
-Template Frame(fixed & selective) example 1
+*Template Frame(fixed & selective) example 1
 ![image](https://user-images.githubusercontent.com/87515234/173173063-ea0369eb-8c11-4b91-942b-853738e0ada5.png)
 
-Template Frame(fixed & selective) example 2
+*Template Frame(fixed & selective) example 2
 ![image](https://user-images.githubusercontent.com/87515234/173173066-c9c3b0ed-b56d-4741-9efd-072ffa0d9fec.png)
 
 
