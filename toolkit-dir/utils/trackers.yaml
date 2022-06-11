@@ -1,0 +1,29 @@
+---
+SiamRPN:  # use tracker identifier as you want to call your tracker from terminal
+  tracker_path: C:/Users/kgu26/capstone/toolkit-dir/SiamRPN.py  # path to the Python script with your tracker
+  class_name: SiamRPN  # class name of your tracker 
+
+SiamRPN_fix_template: 
+  tracker_path: C:/Users/kgu26/capstone/toolkit-dir/SiamRPN_fix_template.py 
+  class_name: SiamRPN_fix_template
+
+SiamRPN_selective_template: 
+  tracker_path: C:/Users/kgu26/capstone/toolkit-dir/SiamRPN_selevtice_template.py 
+  class_name: SiamRPN_selective_template 
+
+SiamRPN_fixNselective_template: 
+  tracker_path: C:/Users/kgu26/capstone/toolkit-dir/SiamRPN_fixNselective_template.py 
+  class_name: SiamRPN_fixNselective_template 
+
+SiamRPN_ResNext22: 
+  tracker_path: C:/Users/kgu26/capstone/toolkit-dir/SiamRPN_ResNext22.py 
+  class_name: SiamRPN_ResNext22 
+# another trackers can be added here, similarly as in the upper example
+# here is an example for the NCC tracker:
+#ncc_tracker:
+#  tracker_path: path\to\python_ncc.py
+#  class_name: NCCTracker  
+#SiamRPN:  # use tracker identifier as you want to call your tracker from terminal
+#  tracker_path: TODO: C:/Users/kgu26/capstone/toolkit-dir/SiamRPN.py  # path to the Python script with your tracker
+#  class_name: TODO: SiamRPN
+...
