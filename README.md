@@ -39,7 +39,7 @@ SiamRPN은 OTB pretrained model을 사용했다.
 
 **Evaluation Methods**
 
-*원래 방식(Ground-Truth 사용) 및 수정 방식(Ground-Truth 미사용)
+* 원래 방식(Ground-Truth 사용) 및 수정 방식(Ground-Truth 미사용)
 
 ![image](https://user-images.githubusercontent.com/87515234/173172725-5db8015c-d343-479b-8177-4d0d8c4fbd35.png)![image](https://user-images.githubusercontent.com/87515234/173172728-ec6f5b05-9546-4fe9-947f-e22a41e7a49a.png)
 
