@@ -13,7 +13,7 @@
 --------
 
 ## Architecture
-<img src="https://user-images.githubusercontent.com/87515234/173172305-ab51766e-97de-43f0-b433-3e258f41a073.png width=200 height=200/>
+<img src="https://user-images.githubusercontent.com/87515234/173172305-ab51766e-97de-43f0-b433-3e258f41a073.png" width="200" height="200"/>
 
 SiamRPN의 tracking은 추적하고자 하는 target이 담긴 frame의 127x127 크기의 sub image인 Template Frame과 이후의 frame에서 추적하고자
 하는 target이 담긴 255x255 크기의 sub image인 Detection Frame의 pair-wise correlation을 통해 이뤄진다. 
