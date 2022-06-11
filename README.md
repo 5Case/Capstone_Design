@@ -57,6 +57,7 @@ Tracking을 하여 evaluation 하는 구조이다. 하지만 실제 세계에서
 * VOT 2016
 
 ![image](https://user-images.githubusercontent.com/87515234/173172798-5d63a5d6-ef8d-4980-b723-ef6a2ee92da6.png)
+
 VOT Challenge의 dataset으로 연도별로 sequence가 다르며, occlusion, illumination change, object motion, object size change,
 camera motion, unassigned 등 6가지 attributes를 가지고 있다.
 
