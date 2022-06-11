@@ -95,22 +95,22 @@ https://user-images.githubusercontent.com/87515234/173173485-35398d54-c1d9-4f21-
 
 **compare results**
 
-'''
+```
 
 python compare_trackers.py --workspace_path workspace-dir --trackers tracker-id1 tracker-id2 tracker-id3 ... --sensitivity sensitivity
 
 ex: python compare_trackers.py --workspace_path C:\Users\kgu26\capstone\workspace-dir --trackers SiamRPN SiamRPN_fix_template SiamRPN_selective_template SiamRPN_fixNselective_template --sensitivity -1
 
-'''
+```
 
 **visualize results**
 
-'''
+```
 
 python visualize_result.py --workspace_path workspace-dir --tracker tracker-id --sequence sequence-name
 
 ex: python visualize_result.py --workspace_path C:/Users/kgu26/capstone/workspace-dir --tracker SiamRPN_fixNselective_template --sequence nature
 
-'''
+```
 
 --------
