@@ -26,16 +26,19 @@ SiamRPN은 OTB pretrained model을 사용했다.
 ![image](https://user-images.githubusercontent.com/87515234/173172428-50687c5b-9180-4bee-b4c2-f84f53e1b82e.png)
 
 **Process1**
+
 기존 SiamRPN은 tracking이 종료될 때까지 첫 번째 frame의 target sub image를 Template Frame으로 고정한다. 영상에서 객체는 시간(frame)에
 따라 움직이고 있고, 따라서 target의 특정 부분만을 가리키고 있는 단일 frame을 template frame으로 고정한다면 tracking에 실패할 가능성이
 높아질 것이다. 첫 번째 과정은 Template Frame과 Detection Frame 간의 tracking 결과 score가 threshold보다 낮아지면 Template Frame을
 교체하는 방식으로, Frame마다 바뀌는 target 모양에 대처하기 위한 실험이다. 즉, Template Frame을 교체했을 때의 성능을 측정하고자 한다.
 
 **Process2**
+
 두 번째 과정은 Template Frame을 교체하는 방식만을 사용하는 것이 아니라 Template Frame을 첫 번째 frame의 target sub image로 고정했을
 때, 즉 기존의 SiamRPN의 tracking에 대한 결과도 같이 사용하여 과정1에 비해 더 좋은 성능을 얻기 위한 실험이다.
 
 **Evaluation Methods**
+
 *원래 방식(Ground-Truth 사용)
 ![image](https://user-images.githubusercontent.com/87515234/173172725-5db8015c-d343-479b-8177-4d0d8c4fbd35.png)
 *수정 방식(Ground-Truth 미사용)
