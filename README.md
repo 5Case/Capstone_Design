@@ -39,13 +39,9 @@ SiamRPN은 OTB pretrained model을 사용했다.
 
 **Evaluation Methods**
 
-*원래 방식(Ground-Truth 사용)
+*원래 방식(Ground-Truth 사용) 및 수정 방식(Ground-Truth 미사용)
 
-![image](https://user-images.githubusercontent.com/87515234/173172725-5db8015c-d343-479b-8177-4d0d8c4fbd35.png)
-
-*수정 방식(Ground-Truth 미사용)
-
-![image](https://user-images.githubusercontent.com/87515234/173172728-ec6f5b05-9546-4fe9-947f-e22a41e7a49a.png)
+![image](https://user-images.githubusercontent.com/87515234/173172725-5db8015c-d343-479b-8177-4d0d8c4fbd35.png)![image](https://user-images.githubusercontent.com/87515234/173172728-ec6f5b05-9546-4fe9-947f-e22a41e7a49a.png)
 
 Evaluation Methods로는 VOT Challenge의 vot evaluation toolkit이 존재한다. 이 toolkit의 주요 지표로는 accuracy(average overlap),
 robustness가 존재하는데, accuracy는 model이 예측한 predicted box와 ground-truth간의 overlap의 평균이고, robustness는 failures 수와
