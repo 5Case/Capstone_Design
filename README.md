@@ -54,7 +54,7 @@ Tracking을 하여 evaluation 하는 구조이다. 하지만 실제 세계에서
 
 **Dataset**
 
-*VOT 2016
+* VOT 2016
 
 ![image](https://user-images.githubusercontent.com/87515234/173172798-5d63a5d6-ef8d-4980-b723-ef6a2ee92da6.png)
 VOT Challenge의 dataset으로 연도별로 sequence가 다르며, occlusion, illumination change, object motion, object size change,
@@ -64,45 +64,25 @@ camera motion, unassigned 등 6가지 attributes를 가지고 있다.
 
 ## Results
 
-*Process 1 결과(table)
+* Process 1 결과(table & plot)
 
-![image](https://user-images.githubusercontent.com/87515234/173172840-be0d2b9a-23a3-4ffe-ba72-42d5e44de70f.png)
+![image](https://user-images.githubusercontent.com/87515234/173172840-be0d2b9a-23a3-4ffe-ba72-42d5e44de70f.png)![image](https://user-images.githubusercontent.com/87515234/173172841-3f8d3e47-d01b-4a96-be83-e777b416b06a.png)
 
-*Process 1 결과(plot)
+* Tracking 놓친 순간 & 후 (Template Frame 고정)
 
-![image](https://user-images.githubusercontent.com/87515234/173172841-3f8d3e47-d01b-4a96-be83-e777b416b06a.png)
+![image](https://user-images.githubusercontent.com/87515234/173173010-5d0e92f7-dffa-495c-8e65-393e194ae7e7.png)![image](https://user-images.githubusercontent.com/87515234/173173013-b94ad56d-5144-4f5d-9c14-b7c5c6c7be06.png)
 
-*Tracking 놓친 순간(Template Frame 고정)
+* Tracking 놓친 순간 & 후 (Template Frame 선택적)
 
-![image](https://user-images.githubusercontent.com/87515234/173173010-5d0e92f7-dffa-495c-8e65-393e194ae7e7.png)
+![image](https://user-images.githubusercontent.com/87515234/173173034-bb10c80b-8861-4f67-a957-1ad0e0953f3a.png)![image](https://user-images.githubusercontent.com/87515234/173173038-e8c857dc-04f4-4f48-b3d1-d1c074c08543.png)
 
-*Tracking 놓친 후(Template Frame 고정)
+* Process 2 결과(table & plot)
 
-![image](https://user-images.githubusercontent.com/87515234/173173013-b94ad56d-5144-4f5d-9c14-b7c5c6c7be06.png)
+![image](https://user-images.githubusercontent.com/87515234/173172854-542efbe0-f9cd-4157-b78b-903486133c80.png)![image](https://user-images.githubusercontent.com/87515234/173172856-42923273-83be-4c3a-b559-d47a64205f06.png)
 
-*Tracking 놓친 순간(Template Frame 선택적)
+* Template Frame(fixed & selective) example 1 & 2
 
-![image](https://user-images.githubusercontent.com/87515234/173173034-bb10c80b-8861-4f67-a957-1ad0e0953f3a.png)
-
-*Tracking 놓친 후(Template Frame 선택적)
-
-![image](https://user-images.githubusercontent.com/87515234/173173038-e8c857dc-04f4-4f48-b3d1-d1c074c08543.png)
-
-*Process 2 결과(table)
-
-![image](https://user-images.githubusercontent.com/87515234/173172854-542efbe0-f9cd-4157-b78b-903486133c80.png)
-
-*Process 2 결과(plot)
-
-![image](https://user-images.githubusercontent.com/87515234/173172856-42923273-83be-4c3a-b559-d47a64205f06.png)
-
-*Template Frame(fixed & selective) example 1
-
-![image](https://user-images.githubusercontent.com/87515234/173173063-ea0369eb-8c11-4b91-942b-853738e0ada5.png)
-
-*Template Frame(fixed & selective) example 2
-
-![image](https://user-images.githubusercontent.com/87515234/173173066-c9c3b0ed-b56d-4741-9efd-072ffa0d9fec.png)
+![image](https://user-images.githubusercontent.com/87515234/173173063-ea0369eb-8c11-4b91-942b-853738e0ada5.png)![image](https://user-images.githubusercontent.com/87515234/173173066-c9c3b0ed-b56d-4741-9efd-072ffa0d9fec.png)
 
 
 ## Results Videos
@@ -115,16 +95,20 @@ https://user-images.githubusercontent.com/87515234/173173485-35398d54-c1d9-4f21-
 
 **compare results**
 '''
+
 python compare_trackers.py --workspace_path workspace-dir --trackers tracker-id1 tracker-id2 tracker-id3 ... --sensitivity sensitivity
 
 ex: python compare_trackers.py --workspace_path C:\Users\kgu26\capstone\workspace-dir --trackers SiamRPN SiamRPN_fix_template SiamRPN_selective_template SiamRPN_fixNselective_template --sensitivity -1
+
 '''
 
 **visualize results**
 '''
+
 python visualize_result.py --workspace_path workspace-dir --tracker tracker-id --sequence sequence-name
 
 ex: python visualize_result.py --workspace_path C:/Users/kgu26/capstone/workspace-dir --tracker SiamRPN_fixNselective_template --sequence nature
+
 '''
 
 --------
